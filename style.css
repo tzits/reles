@@ -1,0 +1,108 @@
+html {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+body {
+	background-image: url("./team.JPG");
+	background-size: 100%;
+}
+
+form {
+	grid-column: 1 / -1;
+}
+
+.button_container {
+	display: grid;
+	grid-template-columns: 100px;
+	grid-gap: 20px;
+	padding: 5px;
+}
+
+.form_entry {
+	grid-template-columns: 200px 200px
+}
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	grid-gap: 20px;
+	padding: 20px;
+}
+
+.score{
+	margin: 5px;
+	padding: 5px;
+	background-color: #CBEDFF;
+	text-align: center;
+}
+
+.modal_container {
+	display: none;
+	grid-column: 1 / -1;
+	grid-row: 1 / -1;
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+
+}
+
+.modal {
+	display: none;
+	grid-column: 1 / -1;
+	grid-row: 1 / -1;
+	background: #CBEDFF;
+	position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 85%; /* Full width */
+  height: 85%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	justify-items: center;
+	margin: 5% 5% 5% 5%;
+}
+
+.activate {
+	display: grid;
+	/* position: 1; */
+}
+
+.age_groups {
+	display: grid;
+	grid-column: 3 / -1;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.score-list {
+	display: grid;
+	grid-column: 1/ -1;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr))
+}
+
+.form_entry {
+	grid-column: span 2;
+}
+
+.clearButton {
+	display: grid;
+	grid-column: 1;
+}
+
+/* .group1 {
+	display: grid;
+}
+
+.group2 {
+
+}
+
+.group3 {
+
+} */

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>I Like Run Things</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class='container'>
+		<div class="modal_container">
+			<div class="modal">
+			</div>
+		</div>
+		<div class="score-list">
+		<div value='open' class='open_scores third'>
+			<h3>Open Scores</h3>
+			<div>No Results</div>
+		</div>
+		<div class='masters_scores third'>
+			<h3>Master's Scores</h3>
+			<div>No Results</div>
+		</div>
+		<div class='grandmasters_scores third'>
+			<h3>Grandmaster's Scores</h3>
+			<div>No Results</div>
+		</div>
+	</div>
+
+	<form id="info">
+		<div class="container cont">
+			<div class="form_entry">
+				<label id="entry" rows=5 columns=33>Entrants</label>
+				<br/>
+				<input type="text" id="results" required>
+				<br>
+			</div>
+			<div class="races">
+				<label for="race_run" rows=5 columns=33>Race</label>
+				<br/>
+				<select type="text" id="race_run" required>
+					<option value='coogans'>Coogans</option>
+					<option value='cp_4miler'>CP 4miler</option>
+					<option value='bk_Half'>Brooklyn Half</option>
+					<option value='queens'>Queens</option>
+					<option value='team_Champs'>Team Champs</option>
+					<option value='harlem'>Harlem 5k</option>
+					<option value='fifth_ave'>5th Avenue Mile</option>
+					<option value='bk'>Bronx 10 Miler</option>
+					<option value='si'>Staten Island</option>
+					<option value='nyc'>NYC Marathon</option>
+					<option value='corbitt'>Ted Corbitt</option>
+				</select>
+			</div>
+			<div class="age_groups">
+				<div class="groups">
+					<input type="radio" class="age" value="open" id="open" name="age">
+					<label for="open" value="open">Open</label>
+				</div>
+				<div class="groups">
+					<input type="radio" class="age" value="masters" id="masters" name="age">
+					<label for="masters" value="masters">Masters</label>
+				</div>
+				<div class="groups">
+					<input type="radio" class="age" value="grandmasters" id="grandmasters" name="age">
+					<label for="grandmasters" value="grand_masters">Grandmasters</label>
+				</div>
+			</div>
+			<div class="button_container">
+				<button class="button" type="submit">submit</button>
+			</div>
+			<div class="button_container clearButton">
+				<button id="clear">Clear All</button>
+			</div>
+		</div>
+	</form>
+	</div>
+
+</body>
+	<script type="text/javascript" src="scripts.js"></script>
+</html>
